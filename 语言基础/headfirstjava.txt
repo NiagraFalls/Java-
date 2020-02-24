@@ -1,0 +1,44 @@
+ArrayList是java的一个类，相比于数组，它是动态的，也就是动态数组。
+类似于python中的列表
+ArrayList和数组的区别：
+1.数组具有自己的特殊语法，比如[],ArrayList就是普通的对象语法。
+2.数组创建时需要确定大小，ArrayList不需要，因为自动调整大小。
+3.ArrayList在java5以上，有了参数化类型，type parameters,5之前只能是异质对象的集合
+
+add(Object elem)向list中添加对象参数
+remove方法采用了overload技术
+remove(int index)在索引参数中移除对象
+remove(Object elem)移除该对象
+contains(Object elem)判断元素是否在列表中，经常用到的方法
+isEmpty()
+indexOf(Object elem)返回对象参数的索引或-1
+size()
+get(int index)返回当前索引参数的对象
+
+ArrayList的创建：ArrayList<Egg> myList=new ArrayList<Egg>();generic技术
+代表创建Egg类型的myList
+
+Chapter16 集合与泛型
+Java如何读取写入文件呢？
+文件写入
+File
+FileWriter
+BufferedWriter
+
+BufferedWriter构造方法有两个参数，第二个参数为布尔类型append,默认是false,可以set成true,表示追加模式写入
+加载java.io包
+输入输出相关操作必须包含在try catch块里面
+File类代表磁盘上的文件，也就是路径，但不是内容。
+
+BUffer，缓冲区，没有buffer,就像逛超市没有手推车，只能一次一结账
+
+文件读取
+创建文件对象
+打开FileReader串流
+读取到BufferedReader里面
+开始读取
+
+ArrayList没有sort方法，解决思路有两个：
+1.使用TreeSet,存入时候自动排序，所以打印出来是有序的
+2.使用Collections.sort(List list)方法，对ArrayList排序
+List是一个接口，ArrayList实现了这个接口，使用多态机制，把ArrayList实例传给Collections.sort方法
