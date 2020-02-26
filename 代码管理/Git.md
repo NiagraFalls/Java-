@@ -40,3 +40,32 @@ GIT开发过程：本地创作->add 暂存区->commit到HEAD->push到远程git p
 
 支持SSH和HTTPS(我已经把HTTPS进行了优化，下载速度提升)。
 问题是每次推送都要输入口令。
+# 分支管理
+Git分支的创建和切换非常快，相比于SVN
+## 创建与合并分支
+### 创建分支
+`git checkout -b dev`
+-b表示创建并切换到新建分支
+；`git switch -c dev`
+
+`git branch`查看当前分支；列出所有分支，当前分支前面有星号
+
+`git checkout master`; `git switch master`都可以用来切换分支
+### 合并分支
+`git merge dev`合并分支
+
+`git branch -d 'dev`删除分支
+## 解决冲突
+合并分支遇到这个问题
+```
+CONFLICT (content): Merge conflict in readme.txt
+Automatic merge failed; fix conflicts and then commit the result.
+```
+用`git status`发现冲突事件。表明合并冲突，需要手动把文件修改成你希望的模式，然后提交就可以。最后记得把多余分支删除掉。
+
+`git log --graph --pretty=oneline --abbrev-commit`查看分支合并的图示
+## 分支管理策略
+## Bug分支
+## Feature分支
+## 多人协作
+## Rebase
