@@ -67,7 +67,27 @@ Automatic merge failed; fix conflicts and then commit the result.
 
 `git log --graph --pretty=oneline --abbrev-commit`查看分支合并的图示
 ## 分支管理策略
+合并分支默认使用fast-forward模式，缺点：删除分支后，会丢掉分支信息。
+
+`git merge --no-ff -m "merge with noff" dev`可以强制禁用ff模式合并，保留分支信息
+
+master分支异常稳定，仅用来发布新版本，不能再上面干活
+
+dev分支用来干活，是不稳定的
+
+每个人都在dev分支干活，所以每个人都有自己的分支，到时候往dev分支进行merge就行
+
 ## Bug分支
+修bug用的临时分支，完成后应该删除
 ## Feature分支
+开发新功能用的临时分支，完成后应该删除
+
+`git stash`用来保存现场
+
+`git stash list`查看工作现场保存栈
+
+恢复现场的方法：1.`git stash pop`恢复顶部并删除顶部现场2.`git stash apply`+`git stash drop `
+
+恢复指定现场用`git stash apply stash@{0}`+`git stash drop stash@{0}`
 ## 多人协作
 ## Rebase
