@@ -16,3 +16,7 @@ Java变量分为：局部变量，类变量（静态变量），成员变量（�
 
 ![图片](https://uploader.shimo.im/f/YKDWfnbRJzA5cBTp.png!thumbnail)
 
+# 远程部署的RMI
+servlet是放在Web服务器上面运行的Java程序。
+
+J2EE->Java EE(Java6以后改名)->Jakata EE(2018年3月)
