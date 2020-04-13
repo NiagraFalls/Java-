@@ -43,5 +43,25 @@ alias命令查看vi和vim是否一致
 六、vim常用命令示意图
 ### 其他vim使用注意事项
 ## 认识与学习BASH
+### 认识BASH这个Shell
+我们必须通过shell将输入的命令和kernel沟通，以控制硬件来工作。
+
+Shell程序狭义理解指的是命令行方面的软件，比如bash。广义理解包括GUI软件。
+
+为什么要学习bash?
+
+一、大家都一样。一法通，万法通。
+二、远程管理：命令行模式就是比较快
+三、Linux的任督二脉：Shell是也。
+
+Shell都有哪些？sh,C shell,K shell,TCSH,bash
+
+查看可用shell:/etc/shells
+
+bash 的功能：history,命令与文件补全功能，alias,shell scripts
+
+通过type来查看命令是否为内置命令。
+### Shell的变量功能
+OS\Shell的变量功能.md
 ## 正则表达式与文件格式化处理
 ## 学习shell脚本

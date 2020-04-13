@@ -49,7 +49,8 @@ Maven深入系统学习
 
 ## 框架
 ### 应用层框架
-SSM,Spring Boot做开源项目
+SSM：Spring,Spring MVC,MyBatis可以搭建复杂的WEB后端系统。需要XML配置Bean,配置Tomcat
+Spring Boot基于Spring MVC,集成自动装箱、开箱即用，自动配置等机制的框架，做开源项目,
 
 ### 中间件
 MQ,RPC(gRPC,dubbo,Spring Cloud,thrift)
@@ -63,7 +64,8 @@ NoSQL:Redis,MogoDB
 
 ## 架构
 ### 分布式/微服务架构
-Spring Cloud,dubbo,RPC
+Spring Cloud，基于SpringBoot,的微服务架构
+,dubbo,RPC
 
 *Spring技术内幕*
 
@@ -71,9 +73,9 @@ Spring Cloud,dubbo,RPC
 Docker,k8s
 
 # 书籍
-*深入理解Java虚拟机* 多看几遍
+*深入理解Java虚拟机* 已买，先不看
 
-# 高级进阶
+# 高级进阶【先不看】
 源码，性能。
 
 JDK源码和设计思想

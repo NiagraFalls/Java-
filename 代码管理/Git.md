@@ -1,3 +1,4 @@
+[Git Cheat Sheet](<https://gitee.com/liaoxuefeng/learn-java/raw/master/teach/git-cheatsheet.pdf>)
 # Git简介
 安装Git
 创建版本库
@@ -93,12 +94,47 @@ dev分支用来干活，是不稳定的
 ## Rebase
 好像没有什么用处哎
 # 标签管理
+标签是针对某个分支的各个commit的
 ## 创建标签
+切换分支
+`git switch 分支名字`
+
+`git tag v1.0`给最新提交打标签
+
+`git tag`查看所有标签
+
+如何给之前的提交打标签呢？
+
+找到历史提交的commit id，然后打上就可以了
+
+具体方法：
+1.`git log --pretty=online --abbrev-commit`
+2.`git tag v0.9 f52c633`
 ## 操作标签
+本地仓库删除标签：`git tag -d v1.0`
+推动标签到远程仓库：
+`git push origin v1.0;git push origin --tags`
+
+标签已经推动到远程仓库，怎么删除标签呢？
+
+一、删除本地标签
+
+二、删除远程标签
+
+`git push origin :refs/tags/v0.9`
+
+三、check
+log in GitHub
 ## 使用Github
 ## 使用Gitee
 # 自定义Git
 ## 忽略特殊文件
 ## 配置别名
 ## 搭建Git服务器
+[LXF的基础版](<https://www.liaoxuefeng.com/wiki/896043488029600/899998870925664>)
+
+[Ubuntu Git配置可行版](<https://blog.csdn.net/baidu_38661691/article/details/88658033>)
 ## 使用Source Tree
+Git有很多图形化工具，用来替代bash操作，sourcetree只是其中之一。[Git GUI](<https://git-scm.com/download/gui/windows>)
+
+SoureTree的安装过程遇到的问题：[注册的跳过方式](<https://www.cnblogs.com/cheese320/p/8876782.html>)
